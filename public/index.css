@@ -1,0 +1,3858 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+  
+
+
+body {
+  flex-wrap: wrap;
+  height: 350vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background: linear-gradient(to right, #FF4B3E,#fc3325 );
+  font-size: 14px;
+}
+
+
+ .mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+      display: none;
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+    .title-mobile {
+      width: 350px;
+      top: 50px;
+      position: absolute;
+      font-family: "Fredoka", sans-serif;
+    color: #ffffff;
+    font-size: 55px;         /* Suuri koko */
+    font-weight: 900;        /* Erittäin paksu */
+    line-height: 1.05;       /* Tiukka riviväli */
+    letter-spacing: -1.5px;  /* Kirjaimet lähekkäin */
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+.accent-text-mobile {
+    color: #fbc531;          /* Keltainen/oranssi tehosteväri */
+    display: block;          /* Pakottaa tekstin uudelle riville */
+}
+
+.subtitle-mobile {
+  top: 250px;
+  width: 350px;
+  position: absolute;
+     font-family: "Archivo Black", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;        /* Normaalipaksuus tasapainoksi */
+    opacity: 0.9;            /* Hieman läpinäkyvyyttä pehmeyteen */
+    margin-top: 0;
+}
+
+.btn-container-mobile{
+  height: auto;
+  width: 90%;
+  top: 400px;
+  position: absolute;
+  display: flex;
+}
+
+.menu-mobile{
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 20px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: #E74C3C;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-radius: 14px;
+  width: 180px;
+  height: 60px;
+}
+
+
+.tilaanyt-mobile{
+  margin-left: 10px;
+   border: rgb(223, 223, 223) 3px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 20px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  width: 170px;
+  height: 60px;
+}
+
+.pizza-mobile{
+  margin-left: -20px;
+  display: block;
+ max-width: 600px;
+   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+  top: 450px;
+  position: absolute;
+}
+
+.hero-text2-mobile{
+  background: none;
+  max-width: 400px;
+  width: 99%;
+  font-weight: bold;
+   font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  color: white;
+  top: 900px;
+  position: absolute;
+}
+
+.hero-text3-mobile{
+  left: 35px;
+  display: block;
+  background: none;
+   width: 330px;
+  top: 975px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+ position: absolute;
+}
+
+.kuva2{
+  filter: brightness(0.5);
+  top: 1200px;
+  position: absolute;
+  border-radius: 20px;
+  width: 90%;
+  height: 400px;
+}
+
+.yhteystiedot-container{
+  border-radius: 20px;
+  border: 8px white solid;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1700px;
+  background: none;
+  height: 500px;
+  width: 95%;
+}
+
+.y-otsikko{
+  top: 20px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.gmail-mobile{
+  top: 70px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.puh-mobile{
+  top: 110px;
+   position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.osoite-mobile{
+  top: 150px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.aukioloajat-mobile{
+  top: 250px;
+  position: absolute;
+   font-family: "Fredoka", sans-serif;
+  height: 200px;
+  width: 250px;
+  background: none;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+.a1-otsikko{
+  padding: 10px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.a2-otsikko{
+  top: 30px;
+  position: absolute;
+   padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.a3-otsikko{
+  top: 60px;
+  position: absolute;
+   padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.luvat-mobile{
+  width: 330px;
+  top: 2300px;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.container {  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-holder{
+  display: flex;
+}
+
+.puh{
+    margin-left: 530px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+    width: 10%;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ostoskori{
+  margin-top: -10px;
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px 6px;
+  display: none; /* piilossa aluksi */
+}
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.hero-teksti{
+    left: 00px ;
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    top: 80px;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero-tekstiy{
+  display: block;
+    left: 00px ;
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    color: #fbc531;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.ala-teksti1{
+    top: 330px;
+   position: absolute;
+    left: 00px;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-container{
+  left: 00px;
+    top: 450px;
+    position: absolute;
+}
+
+.menu-btn{
+   z-index: 10;
+  top: 450px;
+  left: 0px;
+   position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+    background-color: #dcdcdc;
+}
+
+.yh-btn{
+  z-index: 10;
+  top: 450px;
+  left: 265px;
+  position: absolute;
+   border: rgb(223, 223, 223) 3px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 30px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.pizza-kuva{
+    overflow: hidden;
+    background: none;
+    width: 1200px;
+    left: 350px;
+    height: auto;
+    position: absolute;
+}
+
+/*container2*/
+
+.container2{
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.hero-teksti2{
+  left: 00px;
+  top: 0px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 55px;
+}
+
+.hero-teksti3{
+  max-width: 600px;
+   left: 00px;
+  top: 100px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 20px;
+}
+
+.nuoli{
+  top: 300px;
+  left: -50px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.call-pic{
+  left: 150px;
+  top: 350px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+
+.kuva1{
+  display: none;
+  left: 550px;
+  position: absolute;
+  width: 50%;
+  height: auto;
+}
+
+/*miten*/
+
+.how {
+  left: 700px;
+  top: -50px;
+  background: none;
+  position: absolute;
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+
+.how-title {
+  font-weight: bold;
+   font-family: "Fredoka", sans-serif;
+  font-size:35px;
+  color: #fff;
+  margin: 0 0 0.4rem;
+}
+
+.how-sub {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 18px;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 3rem;
+}
+
+.step {
+   font-family: "Archivo Black", sans-serif;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: rgba(255,255,255,0.25);
+  margin-top: 8px;
+  min-height: 40px;
+}
+
+.step:last-child .line {
+  display: none;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+.step-num {
+  font-size: 15px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+
+.step-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.step-desc {
+  font-size: 10px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.cta {
+  margin-top: 0rem;
+}
+
+.cta-btn {
+  left: 150px;
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+  background: #fff;
+  color: #e63227;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+
+
+
+.arvostelu-text{
+  top: 750px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 55px;
+}
+
+
+
+
+
+/*arvostelut*/
+
+:root {
+      --red: #C0392B;
+      --red-dark: #922B21;
+      --red-light: #E74C3C;
+      --cream: #FDF6EC;
+      --gold: #F0C040;
+      --shadow: rgba(0,0,0,0.25);
+    }
+ 
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+ 
+    .cards {
+      top: 900px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      width: 100%;
+      max-width: 1500px;
+    }
+ 
+    .card {
+      width: 500px;
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 20px 20px;
+      box-shadow: 0 4px 18px var(--shadow);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease both;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+ 
+    .card:hover {
+      transform: scale(2);
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+ 
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+ 
+    .card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--red-light);
+      opacity: 0.12;
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      line-height: 1;
+      pointer-events: none;
+    }
+ 
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+ 
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cream);
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.4);
+    }
+ 
+    .reviewer-info { flex: 1; }
+ 
+    .reviewer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--red-dark);
+    }
+ 
+    .reviewer-date {
+      font-size: 0.7rem;
+      color: #999;
+      font-weight: 300;
+      margin-top: 1px;
+    }
+ 
+    .stars { display: flex; gap: 2px; }
+    .stars span { font-size: 0.95rem; }
+    .star-filled { color: var(--gold); }
+    .star-empty  { color: #ddd; }
+ 
+    .review-text {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #444;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    .card-footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(192,57,43,0.12);
+      display: flex;
+      gap: 6px;
+    }
+ 
+    .tag {
+      background: rgba(192,57,43,0.1);
+      color: var(--red-dark);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 20px;
+      border: 1px solid rgba(192,57,43,0.2);
+    }
+ 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /*container3*/
+
+    .container3{
+      position: absolute;
+      top: 2000px;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+    }
+
+
+    .laatikko1{
+      top: 50px;
+      left: 0px;
+      max-width: 700px;
+      height: auto;
+      position: absolute;
+    }
+
+    .yh-otsikko{
+      margin-left: -10px;
+      padding: 10px;
+      font-size: 55px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .gmail{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .puh2{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .osoite{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .aukioloajat-laatikko{
+      top: 320px;
+      left: 0;
+      padding: 20px;
+      border-radius: 20px;
+      width: 300px;
+      border: 5px solid white;
+      height: 200px;
+      position: absolute;
+      background: none;
+    }
+
+    .ak-text{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a1{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a2{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .luvat{
+      left: 700px;
+      position: absolute;
+      top: 500px;
+      font-size: 18px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .some-pic{
+      top: 280px;
+      left: 700px;
+      width: 40%;
+      height: auto;
+      position: absolute;
+    }
+
+
+
+
+
+
+@media  (max-width: 900px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+  
+  
+  body{
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+      background: linear-gradient(to right, #FF4B3E,#fc3325 );
+      height: 250vh;
+    }
+
+    .mobile-navbar{
+      z-index: 10;
+      top: 0px;
+      position: sticky;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: white;
+      height: 100px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .ostoskori{
+      margin-top: 8px;
+      width: 50px;
+      height: auto;
+      position: absolute;
+     right: 30px;
+    }
+
+    .cart-count{
+       position: absolute;
+  top: -6px;
+  right: 5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px 6px;
+  display: none; /* piilossa aluksi */
+    }
+
+    .ostoskori-pic-mobile{
+      height: auto;
+      width: 35px;
+    }
+
+  .hamburger {
+    left: 20px;
+    position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  height: 2.5px;
+  background: #e8221a;
+  border-radius: 2px;
+  transition: transform 0.36s cubic-bezier(.77,0,.175,1), opacity 0.22s;
+  transform-origin: center;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+.slide-menu {
+  position: fixed;
+  top: 62px; left: 0; right: 0;
+  z-index: 999;
+  background: #fff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(.77,0,.175,1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.slide-menu.open { max-height: 300px; }
+
+.slide-menu a {
+   font-family: "Archivo Black", sans-serif;
+  display: block;
+  padding: 16px 24px;
+  color: #222;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #f2f2f2;
+  transition: color 0.15s, background 0.15s;
+}
+.slide-menu a:hover { color: #e8221a; background: #fff8f7; }
+
+.slide-menu a.phone {
+  background: #e8221a;
+  color: #fff;
+  border-bottom: none;
+}
+.slide-menu a.phone:hover { background: #c0180f; color: #fff; }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  top: 62px;
+  background: rgba(0,0,0,0.3);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.overlay.open { opacity: 1; pointer-events: all; }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 3800px; /* TÄRKEÄ */
+}
+
+    .title-mobile {
+      width: 350px;
+      top: 50px;
+      position: absolute;
+      font-family: "Fredoka", sans-serif;
+    color: #ffffff;
+    font-size: 55px;         /* Suuri koko */
+    font-weight: 900;        /* Erittäin paksu */
+    line-height: 1.05;       /* Tiukka riviväli */
+    letter-spacing: -1.5px;  /* Kirjaimet lähekkäin */
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+.accent-text-mobile {
+    color: #fbc531;          /* Keltainen/oranssi tehosteväri */
+    display: block;          /* Pakottaa tekstin uudelle riville */
+}
+
+.subtitle-mobile {
+  top: 250px;
+  width: 350px;
+  position: absolute;
+     font-family: "Archivo Black", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;        /* Normaalipaksuus tasapainoksi */
+    opacity: 0.9;            /* Hieman läpinäkyvyyttä pehmeyteen */
+    margin-top: 0;
+}
+
+.btn-container-mobile{
+  height: auto;
+  width: 90%;
+  top: 400px;
+  position: absolute;
+  display: flex;
+}
+
+.menu-mobile{
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 20px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: #E74C3C;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-radius: 14px;
+  width: 180px;
+  height: 60px;
+}
+
+
+.tilaanyt-mobile{
+  margin-left: 10px;
+   border: rgb(223, 223, 223) 3px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 20px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  width: 170px;
+  height: 60px;
+}
+
+.pizza-mobile{
+  margin-left: -20px;
+  display: block;
+ max-width: 600px;
+   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+  top: 450px;
+  position: absolute;
+}
+
+.hero-text2-mobile{
+  left: 30px;
+  background: none;
+  max-width: 400px;
+  width: 99%;
+  font-weight: bold;
+   font-family: "Fredoka", sans-serif;
+  font-size:35px;
+  color: white;
+  top: 900px;
+  position: absolute;
+}
+
+.hero-text3-mobile{
+  left: 30px;
+  display: block;
+  background: none;
+   width: 330px;
+  top: 975px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+ position: absolute;
+}
+
+ .how-mobile {
+  top: 1200px;
+  background: none;
+  position: absolute;
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+
+.how-title {
+  font-weight: bold;
+   font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  color: #fff;
+  margin: 0 0 0.4rem;
+}
+
+.how-sub {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 18px;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 3rem;
+}
+
+.step {
+   font-family: "Archivo Black", sans-serif;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: rgba(255,255,255,0.25);
+  margin-top: 8px;
+  min-height: 40px;
+}
+
+.step:last-child .line {
+  display: none;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+.step-num {
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+
+.step-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.cta {
+  margin-top: 3rem;
+}
+
+.cta-btn {
+  left: 40px;
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+  background: #fff;
+  color: #e63227;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.kuva2{
+  filter: brightness(0.5);
+  top: 2450px;
+  position: absolute;
+  border-radius: 20px;
+  width: 90%;
+  height: 400px;
+}
+
+.yhteystiedot-container{
+  border-radius: 20px;
+  border: 8px white solid;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3000px;
+  background: none;
+  height: 500px;
+  width: 95%;
+}
+
+.y-otsikko{
+  top: 20px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.gmail-mobile{
+  top: 70px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.puh-mobile{
+  top: 110px;
+   position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.osoite-mobile{
+  top: 150px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.aukioloajat-mobile{
+  top: 250px;
+  position: absolute;
+   font-family: "Fredoka", sans-serif;
+  height: 200px;
+  width: 250px;
+  background: none;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+.a1-otsikko{
+  padding: 10px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.a2-otsikko{
+  top: 30px;
+  position: absolute;
+   padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.a3-otsikko{
+  top: 60px;
+  position: absolute;
+   padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.luvat-mobile{
+  width: 330px;
+  top: 3700px;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+
+    
+
+
+
+
+
+
+
+
+.container {
+  position: absolute;
+  top: 120px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.navbar{
+  display: none;
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-holder{
+  display: flex;
+}
+
+.puh{
+  font-size: 20px;
+    margin-left: 75px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+    width: 12%;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.hero-teksti{
+  display: none;
+    left: 20px ;
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    max-width: 350px;
+    top: 10px;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.ala-teksti1{
+  display: none;
+    top: 190px;
+   position: absolute;
+    left: 20px;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-container{
+  left: 00px;
+    top: 450px;
+    position: absolute;
+}
+
+.menu-btn{
+  display: none;
+   z-index: 10;
+  top: 150px;
+  left: 20px;
+   position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+    background-color: #dcdcdc;
+}
+
+.yh-btn{
+  display: none;
+   z-index: 10;
+  left: 310px;
+  top: 350px;
+     position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.pizza-kuva{
+  display: none;
+  top: 30px;
+  left: 150px;
+    overflow: hidden;
+    background: none;
+    width:350px;
+    height: auto;
+    position: absolute;
+}
+
+/*container2*/
+
+.container2{
+  display: none;
+  top: 500px;
+  position: absolute;
+   justify-content: center;
+    align-items: center;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.hero-teksti2{
+  left: 50px;
+  top: 150px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 35px;
+}
+
+.hero-teksti3{
+  max-width: 600px;
+   left: 50px;
+  top: 220px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 20px;
+}
+
+.nuoli{
+  top: 400px;
+  left: 50px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.call-pic{
+  left: 250px;
+  top: 420px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+
+.kuva1{
+  top: 290px;
+  left: 575px;
+  position: absolute;
+  width: 40%;
+  height: auto;
+}
+
+.yh-btn2{
+  top: 800px;
+  left: 750px;
+  position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn2:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+
+.arvostelu-text{
+  top: 950px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 55px;
+}
+
+
+
+
+
+/*arvostelut*/
+
+:root {
+      --red: #C0392B;
+      --red-dark: #922B21;
+      --red-light: #E74C3C;
+      --cream: #FDF6EC;
+      --gold: #F0C040;
+      --shadow: rgba(0,0,0,0.25);
+    }
+ 
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+ 
+    .cards {
+      top: 1100px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      width: 100%;
+      max-width: 1500px;
+    }
+ 
+    .card {
+      width: 500px;
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 20px 20px;
+      box-shadow: 0 4px 18px var(--shadow);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease both;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+ 
+    .card:hover {
+      transform: scale(2);
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+ 
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+ 
+    .card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--red-light);
+      opacity: 0.12;
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      line-height: 1;
+      pointer-events: none;
+    }
+ 
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+ 
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cream);
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.4);
+    }
+ 
+    .reviewer-info { flex: 1; }
+ 
+    .reviewer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--red-dark);
+    }
+ 
+    .reviewer-date {
+      font-size: 0.7rem;
+      color: #999;
+      font-weight: 300;
+      margin-top: 1px;
+    }
+ 
+    .stars { display: flex; gap: 2px; }
+    .stars span { font-size: 0.95rem; }
+    .star-filled { color: var(--gold); }
+    .star-empty  { color: #ddd; }
+ 
+    .review-text {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #444;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    .card-footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(192,57,43,0.12);
+      display: flex;
+      gap: 6px;
+    }
+ 
+    .tag {
+      background: rgba(192,57,43,0.1);
+      color: var(--red-dark);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 20px;
+      border: 1px solid rgba(192,57,43,0.2);
+    }
+ 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /*container3*/
+
+    .container3{
+      position: absolute;
+      top: 1900px;
+      justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1100px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+    }
+
+
+    .laatikko1{
+      top: 50px;
+      left: 0px;
+      max-width: 700px;
+      height: auto;
+      position: absolute;
+    }
+
+    .yh-otsikko{
+      margin-left: -10px;
+      padding: 10px;
+      font-size: 55px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .gmail{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .puh2{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .osoite{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .aukioloajat-laatikko{
+      top: 320px;
+      left: 0;
+      padding: 20px;
+      border-radius: 20px;
+      width: 300px;
+      border: 5px solid white;
+      height: 200px;
+      position: absolute;
+      background: none;
+    }
+
+    .ak-text{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a1{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a2{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .luvat{
+      left: 700px;
+      position: absolute;
+      top: 500px;
+      font-size: 18px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .some-pic{
+      top: 280px;
+      left: 700px;
+      width: 40%;
+      height: auto;
+      position: absolute;
+    }      
+}
+
+
+
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1249px) {
+  body {
+  height: 350vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background: linear-gradient(to right, #FF4B3E,#fc3325 );
+  font-size: 14px;
+}
+
+
+
+.slide-menu{
+  display: none;
+}
+
+.mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .ostoskori{
+      margin-left: 600px;
+      position: absolute;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+.container {
+  position: absolute;
+  top: 120px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-holder{
+  display: flex;
+}
+
+.puh{
+  font-size: 20px;
+    margin-left: 75px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+    width: 12%;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.hero-teksti{
+    left: 50px ;
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    max-width: 400px;
+    top: 50px;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.hero-tekstiy {
+  width: 100%;
+  display: flex;
+  left: 0px;
+  position: absolute;
+  font-family: "Fredoka", sans-serif;
+  color: #fbc531;
+  font-size: 35px;
+  font-weight: bold;
+  white-space: nowrap; /* estää rivinvaihdon */
+}
+
+.ala-teksti1{
+    top: 190px;
+   position: absolute;
+    left: 50px;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-container{
+  left: 00px;
+    top: 450px;
+    position: absolute;
+}
+
+.menu-btn{
+   z-index: 10;
+  top: 350px;
+  left: 50px;
+   position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+    background-color: #dcdcdc;
+}
+
+  .yh-btn{
+  z-index: 10;
+  top: 350px;
+  left: 310px;
+  position: absolute;
+   border: rgb(223, 223, 223) 3px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 30px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.yh-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+
+.pizza-kuva{
+  top: -60px;
+    overflow: hidden;
+    background: none;
+    width: 850px;
+    left: 450px;
+    height: auto;
+    position: absolute;
+}
+
+/*container2*/
+
+.container2{
+  top: 500px;
+  position: absolute;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.hero-teksti2{
+  left: 50px;
+  top: 150px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 35px;
+}
+
+.hero-teksti3{
+  max-width: 600px;
+   left: 50px;
+  top: 220px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 20px;
+}
+
+.nuoli{
+  top: 400px;
+  left: 50px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.call-pic{
+  left: 250px;
+  top: 420px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+
+.kuva1{
+  top: 290px;
+  left: 575px;
+  position: absolute;
+  width: 40%;
+  height: auto;
+}
+
+.how {
+  left: 700px;
+  top: 150px;
+  background: none;
+  position: absolute;
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+
+.how-title {
+  font-weight: bold;
+   font-family: "Fredoka", sans-serif;
+  font-size:35px;
+  color: #fff;
+  margin: 0 0 0.4rem;
+}
+
+.how-sub {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 18px;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 3rem;
+}
+
+.step {
+   font-family: "Archivo Black", sans-serif;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: rgba(255,255,255,0.25);
+  margin-top: 8px;
+  min-height: 40px;
+}
+
+.step:last-child .line {
+  display: none;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+.step-num {
+  font-size: 15px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+
+.step-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.step-desc {
+  font-size: 10px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.cta {
+  margin-top: 0rem;
+}
+
+.cta-btn {
+  left: 150px;
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+  background: #fff;
+  color: #e63227;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.arvostelu-text{
+  top: 950px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 55px;
+}
+
+
+
+
+
+/*arvostelut*/
+
+:root {
+      --red: #C0392B;
+      --red-dark: #922B21;
+      --red-light: #E74C3C;
+      --cream: #FDF6EC;
+      --gold: #F0C040;
+      --shadow: rgba(0,0,0,0.25);
+    }
+ 
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+ 
+    .cards {
+      top: 1100px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      width: 100%;
+      max-width: 1500px;
+    }
+ 
+    .card {
+      width: 500px;
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 20px 20px;
+      box-shadow: 0 4px 18px var(--shadow);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease both;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+ 
+    .card:hover {
+      transform: scale(2);
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+ 
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+ 
+    .card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--red-light);
+      opacity: 0.12;
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      line-height: 1;
+      pointer-events: none;
+    }
+ 
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+ 
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cream);
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.4);
+    }
+ 
+    .reviewer-info { flex: 1; }
+ 
+    .reviewer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--red-dark);
+    }
+ 
+    .reviewer-date {
+      font-size: 0.7rem;
+      color: #999;
+      font-weight: 300;
+      margin-top: 1px;
+    }
+ 
+    .stars { display: flex; gap: 2px; }
+    .stars span { font-size: 0.95rem; }
+    .star-filled { color: var(--gold); }
+    .star-empty  { color: #ddd; }
+ 
+    .review-text {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #444;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    .card-footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(192,57,43,0.12);
+      display: flex;
+      gap: 6px;
+    }
+ 
+    .tag {
+      background: rgba(192,57,43,0.1);
+      color: var(--red-dark);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 20px;
+      border: 1px solid rgba(192,57,43,0.2);
+    }
+ 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /*container3*/
+
+    .container3{
+      position: absolute;
+      top: 1900px;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1100px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+    }
+
+
+    .laatikko1{
+      top: 50px;
+      left: 0px;
+      max-width: 700px;
+      height: auto;
+      position: absolute;
+    }
+
+    .yh-otsikko{
+      margin-left: -10px;
+      padding: 10px;
+      font-size: 55px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .gmail{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .puh2{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .osoite{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .aukioloajat-laatikko{
+      top: 320px;
+      left: 0;
+      padding: 20px;
+      border-radius: 20px;
+      width: 300px;
+      border: 5px solid white;
+      height: 200px;
+      position: absolute;
+      background: none;
+    }
+
+    .ak-text{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a1{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a2{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .luvat{
+      left: 700px;
+      position: absolute;
+      top: 500px;
+      font-size: 18px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .some-pic{
+      top: 280px;
+      left: 700px;
+      width: 40%;
+      height: auto;
+      position: absolute;
+    }
+
+  
+}
+
+/* 💻 Läppäri */
+@media (min-width: 1250px) and (max-width: 1439px) {
+  body {
+  height: 350vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background: linear-gradient(to right, #FF4B3E,#fc3325 );
+  font-size: 14px;
+}
+
+.slide-menu{
+  display: none;
+}
+
+.mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+.ostoskori{
+  margin-left: 1000px;
+  position: absolute;
+}
+
+.container {
+  position: absolute;
+  top: 100px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1300px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-holder{
+  display: flex;
+}
+
+.puh{
+  font-size: 20px;
+    margin-left: 400px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+    width: 10%;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.hero-teksti{
+    left: 100px ;
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    top: 80px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.ala-teksti1{
+    top: 300px;
+   position: absolute;
+    left: 100px;
+    font-family: "Fredoka", sans-serif;
+    max-width: 600px;
+    color: #e7e7e7;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-container{
+  left: 00px;
+    top: 450px;
+    position: absolute;
+}
+
+.menu-btn{
+   z-index: 10;
+  top: 450px;
+  left: 100px;
+   position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+    background-color: #dcdcdc;
+}
+
+.yh-btn{
+  z-index: 10;
+  top: 450px;
+  left: 360px;
+  position: absolute;
+   border: rgb(223, 223, 223) 3px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 30px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.pizza-kuva{
+  top: -50px;
+    overflow: hidden;
+    background: none;
+    width: 1000px;
+    left: 450px;
+    height: auto;
+    position: absolute;
+}
+
+/*container2*/
+
+.container2{
+  top: 800px;
+  position: absolute;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.hero-teksti2{
+  left: 50px;
+  top: 0px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 50px;
+}
+
+.hero-teksti3{
+  max-width: 600px;
+   left: 50px;
+  top: 100px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 20px;
+}
+
+.nuoli{
+  top: 300px;
+  left: -50px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.call-pic{
+  left: 150px;
+  top: 350px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+
+.kuva1{
+  top: 100px;
+  left: 550px;
+  position: absolute;
+  width: 50%;
+  height: auto;
+}
+
+.yh-btn2{
+  top: 750px;
+  left: 810px;
+  position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn2:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+
+.arvostelu-text{
+  top: 950px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 55px;
+}
+
+
+
+
+
+/*arvostelut*/
+
+:root {
+      --red: #C0392B;
+      --red-dark: #922B21;
+      --red-light: #E74C3C;
+      --cream: #FDF6EC;
+      --gold: #F0C040;
+      --shadow: rgba(0,0,0,0.25);
+    }
+ 
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+ 
+    .cards {
+      top: 1100px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      width: 100%;
+      max-width: 1500px;
+    }
+ 
+    .card {
+      width: 500px;
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 20px 20px;
+      box-shadow: 0 4px 18px var(--shadow);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease both;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+ 
+    .card:hover {
+      transform: scale(2);
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+ 
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+ 
+    .card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--red-light);
+      opacity: 0.12;
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      line-height: 1;
+      pointer-events: none;
+    }
+ 
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+ 
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cream);
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.4);
+    }
+ 
+    .reviewer-info { flex: 1; }
+ 
+    .reviewer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--red-dark);
+    }
+ 
+    .reviewer-date {
+      font-size: 0.7rem;
+      color: #999;
+      font-weight: 300;
+      margin-top: 1px;
+    }
+ 
+    .stars { display: flex; gap: 2px; }
+    .stars span { font-size: 0.95rem; }
+    .star-filled { color: var(--gold); }
+    .star-empty  { color: #ddd; }
+ 
+    .review-text {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #444;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    .card-footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(192,57,43,0.12);
+      display: flex;
+      gap: 6px;
+    }
+ 
+    .tag {
+      background: rgba(192,57,43,0.1);
+      color: var(--red-dark);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 20px;
+      border: 1px solid rgba(192,57,43,0.2);
+    }
+ 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /*container3*/
+
+    .container3{
+      position: absolute;
+      top: 2300px;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+    }
+
+
+    .laatikko1{
+      top: 50px;
+      left: 0px;
+      max-width: 700px;
+      height: auto;
+      position: absolute;
+    }
+
+    .yh-otsikko{
+      margin-left: -10px;
+      padding: 10px;
+      font-size: 55px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .gmail{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .puh2{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .osoite{
+      padding: 3px;
+      font-size: 30px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .aukioloajat-laatikko{
+      top: 320px;
+      left: 0;
+      padding: 20px;
+      border-radius: 20px;
+      width: 300px;
+      border: 5px solid white;
+      height: 200px;
+      position: absolute;
+      background: none;
+    }
+
+    .ak-text{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a1{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a2{
+      font-size: 25px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .luvat{
+      left: 700px;
+      position: absolute;
+      top: 500px;
+      font-size: 18px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .some-pic{
+      top: 280px;
+      left: 700px;
+      width: 40%;
+      height: auto;
+      position: absolute;
+    }
+
+  
+
+  
+}
+
+/* 🖥️ Iso näyttö */
+@media (min-width: 1440px) and (max-width:1819px) {
+  body {
+    font-size: 22px;
+  }
+
+  .slide-menu{
+  display: none;
+}
+
+
+  .mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+  .container{
+    top: 120px;
+    height: 70vh;
+    position: absolute;
+   max-width: 1200px;
+  margin: 0 auto; /* keskittää vaakasuunnassa */
+  padding: 0 16px; /* hieman sivutilaa */
+  }
+
+  .container2{
+    height: 600px;
+    top: 800px;
+    position: absolute;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+ .container3{
+      position: absolute;
+      top: 2000px;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1200px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+    }
+
+    
+
+
+
+  
+}
+
+
+
+@media (min-width: 1820px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 300vh;
+    max-width: 1600px;
+    margin: 0 auto; /* keskittää sisällön */
+  }
+
+  .mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+  .navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+}
+
+.puh{
+  font-size: 20px;
+    margin-left: 600px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ostoskori{
+  margin-left: 1300px;
+  position: absolute;
+  margin-top: 10px;
+  display: inline-block
+}
+
+
+
+.logo{
+  position: absolute;
+  left: 15%;
+    width: 180px;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 20px;
+    padding-left: 40px;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-holder{
+  left: 22%;
+  justify-content: center;
+  align-items: center;
+   display: flex;
+  max-width: 1200px;
+  width: 100%;
+  position: absolute;
+}
+
+  /*container*/
+
+  .container{
+    top: 100px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    max-width: 1800px;
+  }
+
+  .hero-teksti{
+    left: 00px ;
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    max-width: 800px;
+    top: 120px;
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hero-tekstiy {
+  width: 100%;
+  display: flex;
+  left: 0px;
+  position: absolute;
+  font-family: "Fredoka", sans-serif;
+  color: #fbc531;
+  font-size: 80px;
+  font-weight: bold;
+  white-space: nowrap; /* estää rivinvaihdon */
+}
+
+.ala-teksti1{
+    top: 460px;
+   position: absolute;
+    left: 00px;
+    font-family: "Fredoka", sans-serif;
+    max-width: 800px;
+    color: #e7e7e7;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+.menu-btn{
+  z-index: 10;
+ width: 250px;
+    height: 60px;
+  top: 700px;
+  left: 0px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+    background-color: #dcdcdc;
+}
+
+
+.yh-btn{
+  z-index: 10;
+  top: 700px;
+  left: 265px;
+  position: absolute;
+   border: rgb(223, 223, 223) 3px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  font-size: 30px;
+   font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 250px;
+  height: 60px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.pizza-kuva{
+  background: none;
+  top: -50px;
+    overflow: hidden;
+    background: none;
+    width: 1400px;
+    left: 580px;
+    height: auto;
+    position: absolute;
+}
+
+/*container2*/
+
+.container2{
+  top: 800px;
+  position: absolute;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1800px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.hero-teksti2{
+  left: 00px;
+  top: 300px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 70px;
+}
+
+.hero-teksti3{
+  max-width: 800px;
+   left: 00px;
+  top: 430px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 35px;
+}
+
+.nuoli{
+  top: 850px;
+  left: -50px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.call-pic{
+  left: 250px;
+  top: 900px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+
+
+.kuva1{
+  top: 400px;
+  left: 850px;
+  position: absolute;
+  width: 50%;
+  height: auto;
+}
+
+/*miten*/
+
+
+.how {
+  left: 1150px;
+  top: 300px;
+  background: none;
+  position: absolute;
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+
+.how-title {
+  font-weight: bold;
+   font-family: "Fredoka", sans-serif;
+  font-size: 55px;
+  color: #fff;
+  margin: 0 0 0.4rem;
+}
+
+.how-sub {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 25px;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 3rem;
+}
+
+.step {
+   font-family: "Archivo Black", sans-serif;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: rgba(255,255,255,0.25);
+  margin-top: 8px;
+  min-height: 40px;
+}
+
+.step:last-child .line {
+  display: none;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+.step-num {
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+
+.step-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.cta {
+  margin-top: 3rem;
+}
+
+.cta-btn {
+  font-family: "Archivo Black", sans-serif;
+  background: #fff;
+  color: #e63227;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.slide-menu{
+  display: none;
+}
+
+.yh-btn2{
+  top: 1350px;
+  left: 1300px;
+  position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 60px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yh-btn2:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+/*arvostelut*/
+
+
+.arvostelu-text{
+  top: 1500px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+   font-family: "Fredoka", sans-serif;
+   font-size: 75px;
+}
+
+/*arvostelut*/
+
+:root {
+      --red: #C0392B;
+      --red-dark: #922B21;
+      --red-light: #E74C3C;
+      --cream: #FDF6EC;
+      --gold: #F0C040;
+      --shadow: rgba(0,0,0,0.25);
+    }
+ 
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+ 
+    .cards {
+      top: 1700px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      width: 100%;
+      max-width: 2000px;
+    }
+ 
+    .card {
+      width: 800px;
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 25px 25px;
+      box-shadow: 0 4px 18px var(--shadow);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease both;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+ 
+    .card:hover {
+      transform: scale(2);
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+ 
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+ 
+    .card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--red-light);
+      opacity: 0.12;
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      line-height: 1;
+      pointer-events: none;
+    }
+ 
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+ 
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--cream);
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.4);
+    }
+ 
+    .reviewer-info { flex: 1; }
+ 
+    .reviewer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--red-dark);
+    }
+ 
+    .reviewer-date {
+      font-size: 30px;
+      color: #999;
+      font-weight: 300;
+      margin-top: 1px;
+    }
+ 
+    .stars { display: flex; gap: 2px; }
+    .stars span { font-size: 30px; }
+    .star-filled { color: var(--gold); }
+    .star-empty  { color: #ddd; }
+ 
+    .review-text {
+      font-size: 25px;
+      line-height: 1.55;
+      color: #444;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    .card-footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(192,57,43,0.12);
+      display: flex;
+      gap: 6px;
+    }
+ 
+    .tag {
+      background: rgba(192,57,43,0.1);
+      color: var(--red-dark);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 20px;
+      border: 1px solid rgba(192,57,43,0.2);
+    }
+ 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /*container3*/
+
+    .container3{
+      position: absolute;
+      top: 3100px;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1600px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+    }
+
+
+    .laatikko1{
+      top: 50px;
+      left: 0px;
+      max-width: 700px;
+      height: auto;
+      position: absolute;
+    }
+
+    .yh-otsikko{
+      margin-left: -10px;
+      padding: 10px;
+      font-size: 85px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .gmail{
+      padding: 3px;
+      font-size: 40px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .puh2{
+      padding: 3px;
+      font-size: 40px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .osoite{
+      padding: 3px;
+      font-size: 40px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .aukioloajat-laatikko{
+      top: 400px;
+      left: 0px;
+      padding: 20px;
+      border-radius: 20px;
+      width: 500px;
+      border: 10px solid white;
+      height: 400px;
+      position: absolute;
+      background: none;
+    }
+
+    .ak-text{
+      font-size: 40px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a1{
+      font-size: 40px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .a2{
+      font-size: 40px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .luvat{
+      max-width: 1200px;
+      left: 700px;
+      position: absolute;
+      top: 800px;
+      font-size: 35px;
+      color: white;
+      font-family: "Fredoka", sans-serif;
+      font-weight: bold;
+    }
+
+    .some-pic{
+      top: 280px;
+      left: 500px;
+      width: 80%;
+      height: auto;
+      position: absolute;
+    }
+}
