@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+  
+    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="menu.css">
+    <title>Paradize Pizzeria/Menu</title>
+</head>
+<body>
+
+     <div id="custom-alert">
+  <span id="alert-text">Lisätty koriin</span>
+</div>
+
+    <nav class="navbar">
+         <img src="logo-removebg-preview (2).png" class="logo">
+         <div class="navbar-holder">
+        <a href="index.html">Etusivu</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html"  >Yhteystiedot</a>
+        <p class="puh">017 3667111</p>
+         <a href="ostoskori.html" class="ostoskori"><img src="shopping_cart_40dp_ FF4B3E_FILL0_wght400_GRAD0_opsz40.png" class="ostoskori-pic"> <span id="cart-count" class="cart-count">0</span></a>
+        </div>    
+    </nav>
+
+    <nav class="mobile-navbar">
+  <img src="logo-removebg-preview (2).png" class="logo-mobile">
+   <a href="ostoskori.html" class="ostoskori"><img src="shopping_cart_40dp_ FF4B3E_FILL0_wght400_GRAD0_opsz40.png" class="ostoskori-pic-mobile"> <span class="cart-count">0</span></a>
+
+  <button class="hamburger" id="hamburgerBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="slide-menu" id="slideMenu">
+  <a href="index.html">Etusivu</a>
+  <a href="menu.html">Menu</a>
+  <a href="menu.html">Tilaa nyt</a>
+  <a href="tel:+358401234567" class="phone">017 3667111</a>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+    <div class="container-mobile">
+      <p class="otsikko">Menu</p>
+
+      <div class="slide-container-mobile">
+        <button onclick="scrollToSection('burgerpizzat-mobile')">Burgerpizzat</button>
+        <button onclick="scrollToSection('annokset-mobile')">Annokset</button>
+        <button onclick="scrollToSection('rullakebabit-mobile')">Rullakebabit</button>
+        <button onclick="scrollToSection('burgerit-mobile')">Burgerit</button>
+        <button onclick="scrollToSection('pizzat-mobile')">Pizzat</button>
+        <button onclick="scrollToSection('salaatit-mobile')">Salaatit</button>
+        <button onclick="scrollToSection('lisaksi-mobile')">Lisäksi</button>
+        <button onclick="scrollToSection('extrat-mobile')">Extrat</button>
+        <button onclick="scrollToSection('juomat-mobile')">Juomat</button>
+      </div>
+
+
+          <p class="burgeripizzat-otsikko-mobile">Burgerpizzat</p>
+         
+        <div class="a-laatikko-mobile" id="burgeri-pizzat-mobile">
+        <div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Hamburger Pizza</div>
+    <p class="kuvaus">Kinkkusuikale, ananas, cheddar</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+
+    <button class="add-btn" onclick="addToCart('pizza_01')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kebab-burger Pizza</div>
+    <p class="kuvaus">Kebab, jalapeno, cheddar</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+
+    <button class="add-btn" onclick="addToCart('pizza_02')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Chickenburger Pizza</div>
+    <p class="kuvaus">Kana, persikka, cheddar</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+
+    <button class="add-btn" onclick="addToCart('pizza_03')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Mexicanaburger Pizza</div>
+    <p class="kuvaus">Pepperoni, jalapeno, ananas</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+
+    <button class="add-btn" onclick="addToCart('pizza_04')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Tonnikalaburger Pizza</div>
+    <p class="kuvaus">Tonnikala, katkarapu</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+
+    <button class="add-btn" onclick="addToCart('pizza_05')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Savuporoburger Pizza</div>
+    <p class="kuvaus">Savuporo, ananas, cheddar</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+
+    <button class="add-btn" onclick="addToCart('pizza_06')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+</div>
+
+
+
+ <p class="annokset-otsikko-mobile" id="annokset-mobile">Annokset</p>
+
+       <div class="laatikko2-mobile">
+
+  <div class="product">
+    <div class="pizza-card-img">
+      <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+      <div class="pizza-card-nimi">Kebab</div>
+      <p class="kuvaus">Valitsemallasi lisukkeella</p>
+      <div class="pizza-card-hinta">12,00 €</div>
+
+      <button class="add-btn" onclick="addToCart('pizza_07')">
+        Lisää koriin
+      </button>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="pizza-card-img">
+      <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+      <div class="pizza-card-nimi">Kanakuutio</div>
+      <p class="kuvaus">Valitsemallasi lisukkeella</p>
+      <div class="pizza-card-hinta">13,00 €</div>
+
+      <button class="add-btn" onclick="addToCart('pizza_08')">
+        Lisää koriin
+      </button>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="pizza-card-img">
+      <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+      <div class="pizza-card-nimi">Kana-pihvi</div>
+      <p class="kuvaus">Valitsemallasi lisukkeella</p>
+      <div class="pizza-card-hinta">13,00 €</div>
+
+      <button class="add-btn" onclick="addToCart('pizza_09')">
+        Lisää koriin
+      </button>
+    </div>
+  </div>
+
+</div>
+
+       
+
+
+   <p class="rullakebabit-otsikko-mobile" id="rullakebabit-mobile">Rullakebabit</p>
+
+       <div class="laatikko3-mobile">
+
+ <div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kebab rulla</div>
+    <p class="kuvaus">Valitse kastike ja lisämaksusta juusto</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_10')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">A + Special Kebab</div>
+    <p class="kuvaus">Aura, feta, ananas</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_11')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kana Rulla</div>
+    <p class="kuvaus">Kana, kastike</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_12')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Mexicana Rulla Kebab</div>
+    <p class="kuvaus">Pepperoni, jalapeno</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_13')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Vegetarian Rulla</div>
+    <p class="kuvaus">Riisi, feta, paprika</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_14')">
+      Lisää koriin
+    </button>
+  </div>
+</div>
+
+</div>
+
+    <p class="burgerit-otsikko-mobile" id="burgerit-mobile">Burgerit</p>
+
+        <div class="laatikko4-mobile">
+
+   <div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Hot mama</div>
+    <p class="kuvaus">220g pihvi, jalapeno, paistettu pekoni, cheddar</p>
+    <div class="pizza-card-hinta">17,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_15')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Pekoni burger</div>
+    <p class="kuvaus">220g pihvi, paistettu pekoni, cheddar</p>
+    <div class="pizza-card-hinta">17,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_16')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Päällikkö burger</div>
+    <p class="kuvaus">3x150g pihvi, ranskalaiset, dippi</p>
+    <div class="pizza-card-hinta">19,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_17')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kuopion special</div>
+    <p class="kuvaus">150g pihvi, kanamuna, paistettu pekoni, aurajuusto</p>
+    <div class="pizza-card-hinta">17,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_18')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Perusburger</div>
+    <p class="kuvaus">150g pihvi, punasipuli, suolakurkku, tomaatti, jäävuorisalaatti</p>
+    <div class="pizza-card-hinta">10,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_19')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Juustoburger</div>
+    <p class="kuvaus">150g pihvi, cheddar, punasipuli, suolakurkku, tomaatti, jäävuorisalaatti</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_20')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kierrosburger</div>
+    <p class="kuvaus">2x100g pihvi, punasipuli, suolakurkku, tomaatti, jäävuorisalaatti</p>
+    <div class="pizza-card-hinta">16,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_21')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Perfect burger</div>
+    <p class="kuvaus">150g pihvi, pekoni, ananas, aurajuusto, punasipuli, suolakurkku, tomaatti, jäävuorisalaatti</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_22')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kana burger</div>
+    <p class="kuvaus">Kanaburgeri, punasipuli, suolakurkku, tomaatti, jäävuorisalaatti</p>
+    <div class="pizza-card-hinta">10,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_23')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kebab burger</div>
+    <p class="kuvaus">Kebabpihvi, punasipuli, suolakurkku, tomaatti, jäävuorisalaatti</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_24')">Lisää koriin</button>
+  </div>
+</div>
+
+</div>
+
+
+         <p class="pizzat-otsikko-mobile" id="pizzat-mobile">Pizzat</p>
+
+       <div class="laatikko5-mobile">
+
+  <div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Bolognese</div>
+    <p class="kuvaus">Tuplajauheliha</p>
+    <div class="pizza-card-hinta">10,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_25')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Margherita</div>
+    <p class="kuvaus">Tuplajuusto</p>
+    <div class="pizza-card-hinta">10,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_26')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Hawai</div>
+    <p class="kuvaus">Kana, ananas</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_27')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Tropicana</div>
+    <p class="kuvaus">Kinkkusuikale, ananas</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_28')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Opera</div>
+    <p class="kuvaus">Kinkkusuikale, tonnikala</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_29')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Americano</div>
+    <p class="kuvaus">Kinkkusuikale, ananas, aura</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_30')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Opera Special</div>
+    <p class="kuvaus">Kinkkusuikale, salami, tonnikala</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_31')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Frutti Di Mare</div>
+    <p class="kuvaus">Katkarapu, simpukka, tonnikala</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_32')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Machu Picchu</div>
+    <p class="kuvaus">Kinkkusuikale, ananas, katkarapu</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_33')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Efesos</div>
+    <p class="kuvaus">Kinkkusuikale, kebab, salami</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_34')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Pohjantähti</div>
+    <p class="kuvaus">Savuporo, ananas, aura</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_35')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Ferrara</div>
+    <p class="kuvaus">Kinkkusuikale, tonnikala, katkarapu</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_36')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kuopion Special</div>
+    <p class="kuvaus">Kinkkusuikale, tonnikala, ananas</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_37')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Paradise</div>
+    <p class="kuvaus">Salami, katkarapu, aura, valkosipuli</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_38')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Gorgonzola</div>
+    <p class="kuvaus">Kinkkusuikale, kebab, pepperoni, aura</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_39')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Mio Special</div>
+    <p class="kuvaus">Kebab, rucola, kirsikkatomatti, valitse kastike</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_40')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Lapponia</div>
+    <p class="kuvaus">Kebab, sipuli, herkkusieni, valitse kastike</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_41')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Quattro Stagioni</div>
+    <p class="kuvaus">Kinkkusuikale, tonnikala, herkkusieni, katkarapu</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_42')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Mexicana</div>
+    <p class="kuvaus">Pepperoni, ananas, jalapeno, valitse kastike</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_43')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Chicken Hawai</div>
+    <p class="kuvaus">Kana, ananas, aura, valitse kastike</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_44')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Chicken Bombay</div>
+    <p class="kuvaus">Kana, persikka, aura, valitse kastike</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_45')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Dillinger</div>
+    <p class="kuvaus">Salami, kinkkusuikale, jauheliha, sipuli</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_46')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Julia</div>
+    <p class="kuvaus">Kinkkusuikale, ananas, katkarapu, aura</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_47')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Volkan</div>
+    <p class="kuvaus">Pepperoni, jalapeno, kana, paprika, valitsemasi kastike</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_48')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Revontuli</div>
+    <p class="kuvaus">Savuporo, kebab, ananas, aura</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_49')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Levin</div>
+    <p class="kuvaus">Kinkkusuikale, kebab, ananas, valitse kastike</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_50')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Chichén Itza</div>
+    <p class="kuvaus">Pepperoni, sipuli, jauheliha, ananas</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_51')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Colosseum</div>
+    <p class="kuvaus">Pekoni, persikka, kana, aura</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_52')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Vegetariana</div>
+    <p class="kuvaus">Feta, paprika, herkkusieni, sipuli</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_53')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Milano</div>
+    <p class="kuvaus">Katkarapu, tomaatti, parmesan, mozzarella, valkosipuli</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_54')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">O'sole Mio</div>
+    <p class="kuvaus">Pepperoni, valkosipuli, aura, tomaatti, valitse kastike</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_55')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kebab Pizza</div>
+    <p class="kuvaus">Kebab, sipuli, tomaatti, jalapeno tai ananas, valitse kastike</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_56')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Liha Pizza</div>
+    <p class="kuvaus">Kinkkusuikale, kebab, salami, pepperoni, pekoni</p>
+    <div class="pizza-card-hinta">14,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_57')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">King Special</div>
+    <p class="kuvaus">Kinkkusuikale tai kebab, ranskalaiset, sipulirenkaat, valitse kastike</p>
+    <div class="pizza-card-hinta">16,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_58')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Juusto Pizza</div>
+    <p class="kuvaus">Tuplajuusto, aura, feta, parmesan</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_59')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Talon Special</div>
+    <p class="kuvaus">Kebab, ranskanperunat, salaatti, kastikkeet</p>
+    <div class="pizza-card-hinta">15,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_60')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Fantasia (2 täytettä)</div>
+    <p class="kuvaus">2 täytettä</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_61')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Fantasia (3 täytettä)</div>
+    <p class="kuvaus">3 täytettä</p>
+    <div class="pizza-card-hinta">12,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_62')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Fantasia (4 täytettä)</div>
+    <p class="kuvaus">4 täytettä</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_63')">Lisää koriin</button>
+  </div>
+</div>
+
+</div>
+
+      <p class="lisäksi-otsikko-mobile" id="lisaksi-mobile">Lisäksi</p>
+
+        <div class="laatikko7-mobile">
+
+  <div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Kinglautanen</div>
+    <p class="kuvaus">Wingsiä, nugetti, nakki, sipulirenkaita</p>
+    <div class="pizza-card-hinta">17,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_64')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Herkkulautanen</div>
+    <p class="kuvaus">Ranskalaiset, nugetti, nakki, sipulirenkaita</p>
+    <div class="pizza-card-hinta">13,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_65')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Nugetti ranskalaiset</div>
+    <p class="kuvaus">Nugetti, ranskalaiset</p>
+    <div class="pizza-card-hinta">9,50 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_66')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Nakki ranskalaiset</div>
+    <p class="kuvaus">Nakki, ranskalaiset</p>
+    <div class="pizza-card-hinta">8,50 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_67')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Nugetti 4kpl</div>
+    <p class="kuvaus">Nugetti</p>
+    <div class="pizza-card-hinta">5,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_68')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Mozzarellatikut 4kpl</div>
+    <p class="kuvaus">Mozzarellatikut</p>
+    <div class="pizza-card-hinta">5,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_69')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Wings 9kpl</div>
+    <p class="kuvaus">1kpl dippi</p>
+    <div class="pizza-card-hinta">11,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_70')">Lisää koriin</button>
+  </div>
+</div>
+
+<div class="product">
+  <div class="pizza-card-img">
+    <img src="pizza1.avif" class="pizzakuvax">
+  </div>
+  <div class="pizza-card-body">
+    <div class="pizza-card-nimi">Sipulirenkaita 6kpl</div>
+    <p class="kuvaus">Sipulirenkaita</p>
+    <div class="pizza-card-hinta">5,00 €</div>
+    <button class="add-btn" onclick="addToCart('pizza_71')">Lisää koriin</button>
+  </div>
+</div>
+
+</div>
+
+         <p class="salaatit-otsikko-mobile" id="salaatit-mobile">Salaatit</p>
+
+       <div class="laatikko6-mobile">
+
+        <div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kana salaatti</div>
+        <p class="kuvaus">Kana, persikka, kananmuna, parmesan</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_72')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Tonnikala salaatti</div>
+        <p class="kuvaus">Tonnikala, tilli, sitruuna</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_73')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Katkarapu salaatti</div>
+        <p class="kuvaus">Katkarapu, tilli, sitruuna</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_74')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kreikkalainen salaatti</div>
+        <p class="kuvaus">Fetajuusto, oliivi, punasipuli</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_75')">Lisää koriin</button>
+    </div>
+</div>
+
+</div>
+
+         <p class="extrat-otsikko-mobile" id="extrat-mobile">Extrat</p>
+
+        <div class="laatikko8-mobile">
+
+          <div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pienet ranskalaiset</div>
+        <p class="kuvaus">Ranskalaiset</p>
+        <div class="pizza-card-hinta">4,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_76')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Isot ranskalaiset</div>
+        <p class="kuvaus">Ranskalaiset</p>
+        <div class="pizza-card-hinta">6,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_77')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Valkosipuli-kuppi</div>
+        <p class="kuvaus">Valkosipulikastike</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_78')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Majoneesi-kuppi</div>
+        <p class="kuvaus">Majoneesi</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_79')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pieni salaatti</div>
+        <p class="kuvaus">Pieni salaatti</p>
+        <div class="pizza-card-hinta">3,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_80')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Iso salaatti</div>
+        <p class="kuvaus">Iso salaatti</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_81')">Lisää koriin</button>
+    </div>
+</div>
+
+</div>
+
+        <p class="juomat-otsikko-mobile" id="juomat-mobile">Juomat</p>
+
+        <div class="laatikko9-mobile">
+
+           <div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_82')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola 0,5l</div>
+        <p class="kuvaus">500 ml</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_83')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_84')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola Zero 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_85')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola Zero 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_86')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Fanta Appelsiini 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_87')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Fanta Appelsiini 0,5l</div>
+        <p class="kuvaus">500 ml</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_88')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Freeway Jaffa Appelsiini 1,5l</div>
+        <p class="kuvaus">tölkki</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_89')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pepsi 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_90')">Lisää koriin</button>
+    </div>
+</div>
+
+<div class="product">
+    <div class="pizza-card-img">
+        <img src="pizza1.avif" class="pizzakuvax">
+    </div>
+    <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pepsi Max 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_91')">Lisää koriin</button>
+    </div>
+</div>
+
+</div>
+
+
+
+<div class="how">
+  <p class="how-title">Näin helppoa se on</p>
+  <p class="how-sub">Pizza ovellesi muutamassa minuutissa</p>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">📋</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 1</p>
+      <p class="step-name">Valitse pizza</p>
+      <p class="step-desc">Selaa monipuolista menuamme — klassikoista erikoisuuksiin. Jokaiselle löytyy oma suosikki.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🛒</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 2</p>
+      <p class="step-name">Tee tilaus</p>
+      <p class="step-desc">Lisää haluamasi tuotteet koriin ja tilaa muutamalla klikkauksella. Nopeaa ja vaivatonta.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🛵</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 3</p>
+      <p class="step-name">Seuraa toimitusta</p>
+      <p class="step-desc">Näet reaaliajassa missä pizzasi menee. Ei enää arvailu — tiedät tasan milloin se saapuu.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🍕</div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 4</p>
+      <p class="step-name">Nauti!</p>
+      <p class="step-desc">Pizza saapuu kuumana ja rapeana suoraan ovellesi. Bon appétit!</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="window.location.href='https://wolt.com/fi/fin/kuopio/restaurant/paradise-pizzeria'" class="cta-btn">Tilaa nyt →</button>
+  </div>
+</div>
+
+        <div class="yhteystiedot-container">
+      <p class="y-otsikko">Paradize pizzeria</p>
+      <p class="gmail-mobile">pizzria3@gmail.com</p>
+      <p class="puh-mobile">017 3667111</p>
+      <p class="osoite-mobile">Haapaniemenkatu 32 B, 70110 Kuopio</p>
+
+      <div class="aukioloajat-mobile">
+        <p class="a1-otsikko">Aukioloajat</p>
+        <p class="a2-otsikko">Ma-To 10:30-4</p>
+        <p class="a3-otsikko">Pe-Su 10:30-5</p>
+      </div>
+    </div>
+
+    <p class="luvat-mobile">© 2026 Kaikki oikeudet pidätetään | Powered by Uuno Juntto</p>
+  </div>
+  </div>
+
+
+        
+    
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+
+       
+
+       <p class="menu-text">Menu</p>
+
+       <div class="slide-container">
+        <button onclick="scrollToSection('burgerpizzat')">Burgerpizzat</button>
+<button onclick="scrollToSection('annokset')">Annokset</button>
+<button onclick="scrollToSection('rullakebabit')">Rullakebabit</button>
+<button onclick="scrollToSection('burgerit')">Burgerit</button>
+<button onclick="scrollToSection('pizzat')">Pizzat</button>
+<button onclick="scrollToSection('salaatit')">Salaatit</button>
+<button onclick="scrollToSection('lisaksi')">Lisäksi</button>
+<button onclick="scrollToSection('extrat')">Extrat</button>
+<button onclick="scrollToSection('juomat')">Juomat</button>
+       </div>
+
+      <div class="burgerpizzat" id="burgerpizzat">
+  
+        <p class="otsikko-burgerpizzat">Burgerpizzat</p>
+  <div class="a-laatikko">
+    
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Hamburger Pizza</div>
+        <p class="kuvaus">Kinkkusuikale, ananas, cheddar</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_01')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kebab-burger Pizza</div>
+        <p class="kuvaus">Kebab, jalapeno, cheddar</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_02')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Chickenburger Pizza</div>
+        <p class="kuvaus">Kana, persikka, cheddar</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_03')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Mexicanaburger Pizza</div>
+        <p class="kuvaus">Pepperoni, jalapeno, ananas</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_04')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Tonnikalaburger Pizza</div>
+        <p class="kuvaus">Tonnikala, katkarapu</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_05')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Savuporoburger Pizza</div>
+        <p class="kuvaus">Savuporo, ananas, cheddar</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_06')">Lisää koriin</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="annokset" id="annokset">
+  <p class="otsikko-annokset">Annokset</p>
+  <div class="laatikko2">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kebab</div>
+        <p class="kuvaus">Valitsemallasi lisukkeella</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_07')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kanakuutio</div>
+        <p class="kuvaus">Valitsemallasi lisukkeella</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_08')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kana-pihvi</div>
+        <p class="kuvaus">Valitsemallasi lisukkeella</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_09')">Lisää koriin</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="rullakebabit" id="rullakebabit">
+  <p class="rullakebabit-otsikko">Rullakebabit</p>
+  <div class="laatikko3">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kebab rulla</div>
+        <p class="kuvaus">Valitse kastike ja juusto</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_10')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">A + Special Kebab</div>
+        <p class="kuvaus">Aura, feta, ananas</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_11')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kana Rulla</div>
+        <p class="kuvaus">Kana</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_12')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Mexicana Rulla</div>
+        <p class="kuvaus">Pepperoni, jalapeno</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_13')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Vegetarian Rulla</div>
+        <p class="kuvaus">Riisi, feta, paprika</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_14')">Lisää koriin</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+
+   <div class="burgerit" id="burgerit">
+  <p class="burgerit-otsikko">Burgerit</p>
+  <div class="laatikko4">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Hot mama</div>
+        <p class="kuvaus">220g pihvi, jalapeno, pekoni, cheddar</p>
+        <div class="pizza-card-hinta">17,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_15')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pekoni burger</div>
+        <p class="kuvaus">220g pihvi, pekoni, cheddar</p>
+        <div class="pizza-card-hinta">17,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_16')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Päällikkö burger</div>
+        <p class="kuvaus">3x150g pihvi, ranskalaiset</p>
+        <div class="pizza-card-hinta">19,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_17')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kuopion special</div>
+        <p class="kuvaus">pihvi, kananmuna, pekoni, aurajuusto</p>
+        <div class="pizza-card-hinta">17,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_18')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Perusburger</div>
+        <p class="kuvaus">150g pihvi, salaatti</p>
+        <div class="pizza-card-hinta">10,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_19')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Juustoburger</div>
+        <p class="kuvaus">pihvi, cheddar</p>
+        <div class="pizza-card-hinta">11,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_20')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kierrosburger</div>
+        <p class="kuvaus">2x100g pihvi</p>
+        <div class="pizza-card-hinta">16,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_21')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Perfect burger</div>
+        <p class="kuvaus">pekoni, ananas, aurajuusto</p>
+        <div class="pizza-card-hinta">14,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_22')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kana burger</div>
+        <p class="kuvaus">kanapihvi</p>
+        <div class="pizza-card-hinta">10,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_23')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kebab burger</div>
+        <p class="kuvaus">kebabpihvi</p>
+        <div class="pizza-card-hinta">11,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_24')">Lisää koriin</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+
+
+
+
+<div class="pizzat" id="pizzat">
+  <p class="pizzat-otsikko">Pizzat</p>
+
+  <div class="laatikko5">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Bolognese</div>
+        <p class="kuvaus">Tuplajauheliha</p>
+        <div class="pizza-card-hinta">10,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_25')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Margherita</div>
+        <p class="kuvaus">Tuplajuusto</p>
+        <div class="pizza-card-hinta">10,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_26')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Hawai</div>
+        <p class="kuvaus">Kana, ananas</p>
+        <div class="pizza-card-hinta">11,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_27')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Tropicana</div>
+        <p class="kuvaus">Kinkkusuikale, ananas</p>
+        <div class="pizza-card-hinta">11,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_28')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Opera</div>
+        <p class="kuvaus">Kinkku, tonnikala</p>
+        <div class="pizza-card-hinta">11,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_29')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Americano</div>
+        <p class="kuvaus">Kinkku, ananas, aura</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_30')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Opera Special</div>
+        <p class="kuvaus">Kinkku, salami, tonnikala</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_31')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Frutti Di Mare</div>
+        <p class="kuvaus">Katkarapu, simpukka, tonnikala</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_32')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Machu Picchu</div>
+        <p class="kuvaus">Kinkku, ananas, katkarapu</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_33')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Efesos</div>
+        <p class="kuvaus">Kinkku, kebab, salami</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_34')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pohjantähti</div>
+        <p class="kuvaus">Savuporo, ananas, aura</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_35')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Ferrara</div>
+        <p class="kuvaus">Kinkku, tonnikala, katkarapu</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_36')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kuopion Special</div>
+        <p class="kuvaus">Kinkku, tonnikala, ananas</p>
+        <div class="pizza-card-hinta">12,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_37')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Paradise</div>
+        <p class="kuvaus">Salami, katkarapu, aura, valkosipuli</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_38')">Lisää koriin</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+   
+<div class="salaatit" id="salaatit">
+  <p class="salaatit-otsikko">Salaatit</p>
+
+  <div class="laatikko6">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kana salaatti</div>
+        <p class="kuvaus">Kana, persikka, kananmuna, parmesan</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_72')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Tonnikala salaatti</div>
+        <p class="kuvaus">Tonnikala, tilli, sitruuna</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_73')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Katkarapu salaatti</div>
+        <p class="kuvaus">Katkarapu, tilli, sitruuna</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_74')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kreikkalainen salaatti</div>
+        <p class="kuvaus">Feta, oliivi, punasipuli</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_75')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="lisäksi" id="lisäksi">
+  <p class="lisäksi-otsikko">Lisäksi</p>
+
+  <div class="laatikko7">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Kinglautanen</div>
+        <p class="kuvaus">Wingsiä, nugetti, nakki, sipulirenkaita</p>
+        <div class="pizza-card-hinta">17,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_64')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Herkkulautanen</div>
+        <p class="kuvaus">Ranskalaiset, nugetti, nakki, sipulirenkaita</p>
+        <div class="pizza-card-hinta">13,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_65')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Nugetti ranskalaiset</div>
+        <p class="kuvaus">Nugetti, ranskalaiset</p>
+        <div class="pizza-card-hinta">9,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_66')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Nakki ranskalaiset</div>
+        <p class="kuvaus">Nakki, ranskalaiset</p>
+        <div class="pizza-card-hinta">8,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_67')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Nugetti 4kpl</div>
+        <p class="kuvaus">Nugetti</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_68')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Mozzarellatikut 4kpl</div>
+        <p class="kuvaus">Mozzarellatikut</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_69')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Wings 9kpl</div>
+        <p class="kuvaus">1 kpl dippi</p>
+        <div class="pizza-card-hinta">11,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_70')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Sipulirenkaita 6kpl</div>
+        <p class="kuvaus">Sipulirenkaita</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_71')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pienet ranskalaiset</div>
+        <p class="kuvaus">Ranskalaiset</p>
+        <div class="pizza-card-hinta">4,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_76')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Isot ranskalaiset</div>
+        <p class="kuvaus">Ranskalaiset</p>
+        <div class="pizza-card-hinta">6,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_77')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Valkosipuli-kuppi</div>
+        <p class="kuvaus">Valkosipulikastike</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_78')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Majoneesi-kuppi</div>
+        <p class="kuvaus">Majoneesi</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_79')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pieni salaatti</div>
+        <p class="kuvaus">Pieni salaatti</p>
+        <div class="pizza-card-hinta">3,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_80')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Iso salaatti</div>
+        <p class="kuvaus">Iso salaatti</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_81')">
+          Lisää koriin
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="juomat" id="juomat">
+  <p class="juomat-otsikko">Juomat</p>
+
+  <div class="laatikko9">
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_82')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola 0,5l</div>
+        <p class="kuvaus">500 ml</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_83')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_84')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola Zero 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_85')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Coca-Cola Zero 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_86')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Fanta Appelsiini 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_87')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Fanta Appelsiini 0,5l</div>
+        <p class="kuvaus">500 ml</p>
+        <div class="pizza-card-hinta">3,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_88')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Freeway Jaffa Appelsiini 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_89')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pepsi 0,33l</div>
+        <p class="kuvaus">330 ml</p>
+        <div class="pizza-card-hinta">2,50 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_90')">Lisää koriin</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pizza-card-img"></div>
+      <div class="pizza-card-body">
+        <div class="pizza-card-nimi">Pepsi Max 1,5l</div>
+        <p class="kuvaus">1,5 l</p>
+        <div class="pizza-card-hinta">5,00 €</div>
+        <button class="add-btn" onclick="addToCart('pizza_91')">Lisää koriin</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+       
+
+
+    </div>
+
+    <div class="container3">
+
+
+     <div class="laatikkox">
+      <p class="yh-otsikko">Paradize Pizzeria</p>
+      <p class="gmail">pizzria3@gmail.com</p>
+      <p class="puh2">017 3667111</p>
+      <p class="osoite"> Haapaniemenkatu 32 B, 70110 Kuopio</p>
+     </div>
+
+     <div class="aukioloajat-laatikko">
+      <p class="ak-text">Aukioloajat</p>
+      <p class="a1">Ma-To 10:30-4</p>
+      <p class="a2">Pe-Su 10:30-5</p>
+     </div>
+
+     <img src="Social_media_ikoneita_tummalla_taustalla-removebg-preview.png" class="some-pic">
+
+     <p class="luvat">© 2026 Kaikki oikeudet pidätetään | Powered by Uuno Juntto</p>
+
+
+     </div>
+    
+</body>
+</html>
