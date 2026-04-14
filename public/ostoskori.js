@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ========================= */
   async function loadProducts() {
     try {
-      const res = await fetch("http://localhost:3000/products");
+      const res = await fetch("https://paradize-pizzeria.onrender.com/products");
       PRODUCTS = await res.json();
       console.log("PRODUCTS LADATTU:", PRODUCTS);
       renderCart();
