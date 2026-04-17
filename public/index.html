@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Paradize Pizzeria</title>
+</head>
+<body>
+
+    <nav class="navbar">
+         <img src="logo-removebg-preview (2).png" class="logo">
+         <div class="navbar-holder">
+        <a href="index.html">Etusivu</a>
+        <a href="menu.html">Menu</a>
+        <a  onclick="scrollToSection()">Yhteystiedot</a>
+        <p class="puh">017 3667111</p>
+        <a href="ostoskori.html" class="ostoskori"><img src="shopping_cart_40dp_ FF4B3E_FILL0_wght400_GRAD0_opsz40.png" class="ostoskori-pic">
+        <span id="cart-count" class="cart-count"></span></a>
+        </div>    
+    </nav>
+
+   <nav class="mobile-navbar">
+  <img src="logo-removebg-preview (2).png" class="logo-mobile">
+  <a href="ostoskori.html" class="ostoskori"><img src="shopping_cart_40dp_ FF4B3E_FILL0_wght400_GRAD0_opsz40.png" class="ostoskori-pic-mobile">
+  <span id="cart-count" class="cart-count"></span></a>
+
+  <button class="hamburger" id="hamburgerBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="slide-menu" id="slideMenu">
+  <a href="index.html">Etusivu</a>
+  <a href="menu.html">Menu</a>
+ <a href="menu.html">Tilaa nyt</a>
+  <a href="tel:+358401234567" class="phone">017 3667111</a>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+
+
+  <div class="mobile-container">
+   <h1 class="title-mobile">
+        Täydellinen pizza <span class="accent-text-mobile">aina pöytääsi</span>
+    </h1>
+
+    <p class="subtitle-mobile">
+        Innovaatiiviset täytteet, tuoreimmat raaka-aineet – jokainen pizza on makuelämys, joka yhdistää perinteen ja nykypäivän maut.
+    </p>
+
+    <div class="btn-container-mobile">
+    <button  onclick="window.location.href='menu.html'" class="menu-mobile">Menu</button>
+    <button  onclick="window.location.href='menu.html'" class="tilaanyt-mobile">Tilaa nyt</button>
+      </div>
+      
+    <img src="shourav-sheikh-a66sGfOnnqQ-unsplash-removebg-preview-removebg-preview-removebg-preview.png" class="pizza-mobile">
+
+    <p class="hero-text2-mobile">Tervetuloa Pizzalle!</p>
+    <p class="hero-text3-mobile">Tervetuloa Paradize Pizzeriaan – paikkaan, jossa pizza on elämys. Valmistamme pizzat tuoreista ja laadukkaista raaka-aineista, rapealla pohjalla ja herkullisilla täytteillä. Valikoimastamme löydät sekä klassikot että erikoisuudet.</p>
+  
+
+    <div class="how-mobile">
+  <p class="how-title">Näin helppoa se on</p>
+  <p class="how-sub">Pizza ovellesi muutamassa minuutissa</p>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">📋</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 1</p>
+      <p class="step-name">Valitse pizza</p>
+      <p class="step-desc">Selaa monipuolista menuamme — klassikoista erikoisuuksiin. Jokaiselle löytyy oma suosikki.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🛒</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 2</p>
+      <p class="step-name">Tee tilaus</p>
+      <p class="step-desc">Lisää haluamasi tuotteet koriin ja tilaa muutamalla klikkauksella. Nopeaa ja vaivatonta.</p>
+    </div>
+  </div>
+
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🍕</div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 3</p>
+      <p class="step-name">Nauti!</p>
+      <p class="step-desc">Pizza saapuu kuumana ja rapeana suoraan ovellesi. Bon appétit!</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="window.location.href='menu.html'" class="cta-btn">Tilaa nyt →</button>
+  </div>
+</div>
+  
+      <img src="kuva2.jpg" class="kuva2">
+
+    <div class="yhteystiedot-container">
+      <p class="y-otsikko">Paradize pizzeria</p>
+      <p class="gmail-mobile">pizzria3@gmail.com</p>
+      <p class="puh-mobile">017 3667111</p>
+      <p class="osoite-mobile">Haapaniemenkatu 32 B, 70110 Kuopio</p>
+
+      <div class="aukioloajat-mobile">
+        <p class="a1-otsikko">Aukioloajat</p>
+        <p class="a2-otsikko">Ma-To 10:30-4</p>
+        <p class="a3-otsikko">Pe-Su 10:30-5</p>
+      </div>
+    </div>
+
+    <p class="luvat-mobile">© 2026 Kaikki oikeudet pidätetään | Powered by Uuno Juntto</p>
+  </div>
+  </div>
+
+
+    <div class="container">
+        
+       <p class="hero-teksti">Täydellinen pizza, tuoreista raaka- <span class="hero-tekstiy">aineista aina pöytään</span></p>
+
+       
+
+       <p class="ala-teksti1">Tutustu pizzaan uudella tavalla: innovatiiviset täytteet, tuoreimmat raaka-aineet ja aina uunista suoraan pöytään. Jokainen pizza on makuelämys, joka yhdistää perinteen ja nykypäivän maut</p>
+
+        
+            <button class="menu-btn" onclick="window.location.href='menu.html'">Menu</button>
+           <button class="yh-btn" onclick="window.location.href='menu.html'">
+          Tilaa nyt
+          </button>
+        
+
+        <img src="shourav-sheikh-a66sGfOnnqQ-unsplash-removebg-preview-removebg-preview-removebg-preview.png" class="pizza-kuva">
+       
+    </div>
+
+
+    <div class="container2">
+        <p class="hero-teksti2">Tervetuloa Pizzalle!</p>
+        <p class="hero-teksti3">Tervetuloa Paradize Pizzeriaan, paikkaan jossa pizza ei ole vain ruokaa, vaan elämys! Meillä jokainen pizza valmistetaan tuoreista ja laadukkaista raaka-aineista, rapeita pohjia ja herkullisia täytteitä unohtamatta. Valikoimastamme löydät sekä klassikot että erikoisuudet, jotka vievät makunystyräsi matkalle ympäri maailmaa.</p>
+
+        <p class="arvostelu-text">Arvosteluja</p>
+
+
+        <img src="nuoli-removebg-preview.png" class="nuoli">
+       <img src="Soita_ja_tilaa_pizzaa-removebg-preview.png" class="call-pic">
+
+
+       
+      <div class="how">
+  <p class="how-title">Näin helppoa se on</p>
+  <p class="how-sub">Pizza ovellesi muutamassa minuutissa</p>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">📋</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 1</p>
+      <p class="step-name">Valitse pizza</p>
+      <p class="step-desc">Selaa monipuolista menuamme — klassikoista erikoisuuksiin. Jokaiselle löytyy oma suosikki.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🛒</div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 2</p>
+      <p class="step-name">Tee tilaus</p>
+      <p class="step-desc">Lisää haluamasi tuotteet koriin ja tilaa muutamalla klikkauksella. Nopeaa ja vaivatonta.</p>
+    </div>
+  </div>
+
+  
+
+  <div class="step">
+    <div class="left">
+      <div class="circle">🍕</div>
+    </div>
+    <div class="content">
+      <p class="step-num">ASKEL 3</p>
+      <p class="step-name">Nauti!</p>
+      <p class="step-desc">Pizza saapuu kuumana ja rapeana suoraan ovellesi. Bon appétit!</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="window.location.href='menu.html'" class="cta-btn">Tilaa nyt →</button>
+  </div>
+</div>
+
+       <div class="cards">
+ 
+    <div class="card">
+      <div class="card-top">
+        <div class="avatar">M</div>
+        <div class="reviewer-info">
+          <div class="reviewer-name">Mikael S.</div>
+          <div class="reviewer-date">Maaliskuu 2025</div>
+        </div>
+        <div class="stars">
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+        </div>
+      </div>
+      <p class="review-text">
+        Absoluuttisesti paras pizza koko kaupungissa! Taikina on täydellisen rapea reunoilta mutta pehmeä keskeltä. Margherita oli yksinkertaisesti mestarillinen – tomaattikastike tuoretta ja mozzarella sulaa juuri oikein. Palvelu oli nopeaa ja sydämellinen. Tulemme takaisin jo ensi viikolla!
+      </p>
+      <div class="card-footer">
+        <span class="tag">Paikan päällä</span>
+        <span class="tag">Margherita</span>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <div class="card-top">
+        <div class="avatar">L</div>
+        <div class="reviewer-info">
+          <div class="reviewer-name">Laura K.</div>
+          <div class="reviewer-date">Helmikuu 2025</div>
+        </div>
+        <div class="stars">
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-empty">★</span>
+        </div>
+      </div>
+      <p class="review-text">
+        Tilasimme koko perheen voimin ja kaikki olivat tyytyväisiä. Lasten pizza tuli nopeasti ja aikuisten erikoispizza oli täynnä makua. Ainoa miinus oli, että odotusaika oli hieman pitkä vilkkaana perjantai-iltana – mutta se oli selvästi sen arvoista!
+      </p>
+      <div class="card-footer">
+        <span class="tag">Kotiinkuljetus</span>
+        <span class="tag">Perhe</span>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <div class="card-top">
+        <div class="avatar">T</div>
+        <div class="reviewer-info">
+          <div class="reviewer-name">Tomi R.</div>
+          <div class="reviewer-date">Tammikuu 2025</div>
+        </div>
+        <div class="stars">
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+          <span class="star-filled">★</span>
+        </div>
+      </div>
+      <p class="review-text">
+        Löysin tämän paikan sattumalta ja nyt käyn täällä joka viikko. Quattro stagioni on oma suosikkini – täytteet ovat aina tuoreita ja runsaita. Henkilökunta muistaa jo nimeni ja tilauksen. Tällaista paikallista helmeä pitää vaalia!
+      </p>
+      <div class="card-footer">
+        <span class="tag">Vakioasiakas</span>
+        <span class="tag">Quattro Stagioni</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+      
+     </div>
+     
+     
+     <div class="container3" id="container3">
+
+
+     <div class="laatikko1">
+      <p class="yh-otsikko">Paradize Pizzeria</p>
+      <p class="gmail">pizzria3@gmail.com</p>
+      <p class="puh2">017 3667111</p>
+      <p class="osoite"> Haapaniemenkatu 32 B, 70110 Kuopio</p>
+     </div>
+
+     <div class="aukioloajat-laatikko">
+      <p class="ak-text">Aukioloajat</p>
+      <p class="a1">Ma-To 10:30-4</p>
+      <p class="a2">Pe-Su 10:30-5</p>
+     </div>
+
+     <img src="Social_media_ikoneita_tummalla_taustalla-removebg-preview.png" class="some-pic">
+
+     <p class="luvat">© 2026 Kaikki oikeudet pidätetään | Powered by Uuno Juntto</p>
+
+
+     </div>
+
+
+ 
+    
+</body>
+</html>
