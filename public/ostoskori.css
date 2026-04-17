@@ -1,0 +1,1164 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   flex-wrap: wrap;
+  height: 250vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background: linear-gradient(to right, #c0392b,#8e1a10 );
+  font-size: 14px;
+}
+
+
+.navbar{
+  z-index: 10;
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 0px;
+}
+
+.navbar-holder{
+  position: absolute;
+  left: 22%;
+  display: flex;
+}
+
+.puh{
+    font-size: 22px;
+    margin-left: 600px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+  position: absolute;
+  left: 15%;
+    width: 180px;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ostoskori{
+  margin-top: -10px;
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px 6px;
+  display: none; /* piilossa aluksi */
+}
+
+
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+
+.container{
+  margin: 20px, 20px, 20px, 20px;
+    top: 250px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    position: absolute;
+}
+
+
+
+.otsikko{
+    margin-top: -30px;
+    position: absolute;
+     font-family: "Archivo Black", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.fix{
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  height: 100px;
+}
+
+
+
+.tilaus-kuutio {
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  width: 400px;
+  margin: auto;
+
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.15),
+    0 5px 15px rgba(0,0,0,0.08);
+
+  transform: translateY(-40px);
+}
+
+.tilaus-kuutio h2 {
+     font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.image-wrapper {
+  flex-shrink: 0;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+     font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-price {
+     font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.item-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.payment-pic{
+    padding: 15px;
+    width: 400px;
+    height: auto;
+}
+
+/* NAPIT */
+.item-controls button {
+  padding: 1px 7px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+/* Hover efekti */
+.item-controls button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+/* Erikoisvärit (valinnainen) */
+.item-controls button:nth-child(1),
+.item-controls button:nth-child(2) {
+  background-color: #4caf50;
+  color: white;
+}
+
+.item-controls button:nth-child(1):hover,
+.item-controls button:nth-child(2):hover {
+  background-color: #45a049;
+}
+
+.item-controls button:nth-child(3) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.item-controls button:nth-child(3):hover {
+  background-color: #c0392b;
+}
+
+.maksa-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item-controls button:hover {
+  opacity: 0.8;
+}
+
+.cart-footer {
+  margin-top: 20px;
+}
+
+.total {
+     font-family: "Archivo Black", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.maksa-btn {
+  margin-top: 20px;
+     font-family: "Archivo Black", sans-serif;
+  width: 100%;
+  padding: 12px;
+  background: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.maksa-btn:hover {
+  background: #e63228;
+}
+
+/*ckecbob*/
+
+
+.shipping {
+     font-family: "Archivo Black", sans-serif;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shipping label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*asiaks tiedot*/
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.customer-info input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+ /*tilauskuutio2*/
+
+.tilaus-kuutio2 {
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  width: 400px;
+
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.15),
+    0 5px 15px rgba(0,0,0,0.08);
+
+  transform: translateY(-40px);
+}
+
+.tilaus-kuutio2 h2{
+   font-family: "Archivo Black", sans-serif;
+}
+
+.row-total{
+  margin-top: 10px;
+  height: auto;
+  font-size: 18px;
+   font-family: "Archivo Black", sans-serif;
+}
+
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#order-form {
+  display: flex;
+  gap: 30px;
+}
+
+.order-items{
+  margin-top: 10px;
+   font-family: "Roboto", sans-serif;
+}
+
+.order-items div{
+  padding: 5px;
+}
+
+
+
+
+
+@media (max-width:1074px) {
+
+  /*navbar-mobile*/
+
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+  
+  
+  body{
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+      background: linear-gradient(to right, #FF4B3E,#fc3325 );
+      height: 110vh;
+    }
+
+  .mobile-navbar{
+      z-index: 10;
+      top: 0px;
+      position: sticky;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: white;
+      height: 100px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+ .ostoskori{
+      margin-top: 8px;
+      width: 50px;
+      height: auto;
+      position: absolute;
+     right: 30px;
+    }
+
+    .cart-count{
+       position: absolute;
+  top: -6px;
+  right: 5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px 6px;
+  display: none; /* piilossa aluksi */
+    }
+
+    .ostoskori-pic-mobile{
+      height: auto;
+      width: 35px;
+    }
+
+  .hamburger {
+    left: 20px;
+    position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  height: 2.5px;
+  background: #e8221a;
+  border-radius: 2px;
+  transition: transform 0.36s cubic-bezier(.77,0,.175,1), opacity 0.22s;
+  transform-origin: center;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+.slide-menu {
+  position: fixed;
+  top: 62px; left: 0; right: 0;
+  z-index: 999;
+  background: #fff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(.77,0,.175,1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.slide-menu.open { max-height: 300px; }
+
+.slide-menu a {
+   font-family: "Archivo Black", sans-serif;
+  display: block;
+  padding: 16px 24px;
+  color: #222;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #f2f2f2;
+  transition: color 0.15s, background 0.15s;
+}
+.slide-menu a:hover { color: #e8221a; background: #fff8f7; }
+
+.slide-menu a.phone {
+  background: #e8221a;
+  color: #fff;
+  border-bottom: none;
+}
+.slide-menu a.phone:hover { background: #c0180f; color: #fff; }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  top: 62px;
+  background: rgba(0,0,0,0.3);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.overlay.open { opacity: 1; pointer-events: all; }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .navbar{
+  z-index: 10;
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 0px;
+}
+
+.navbar-holder{
+  position: absolute;
+  left: 22%;
+  display: flex;
+}
+
+.puh{
+    font-size: 22px;
+    margin-left: 600px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+  position: absolute;
+  left: 15%;
+    width: 180px;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+.container{
+  top: 150px;
+  margin-left: -20px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.otsikko{
+  margin-top: 0;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* FORM */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+#order-form {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* LAATIKOT */
+.tilaus-kuutio,
+.tilaus-kuutio2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.15),
+    0 5px 15px rgba(0,0,0,0.08);
+
+  transform: none;
+}
+
+/* OTSIKOT */
+.tilaus-kuutio h2,
+.tilaus-kuutio2 h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 20px;
+}
+
+/* KORI */
+.cart-item {
+   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.item-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-name {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.item-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.item-controls {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* NAPIT */
+.item-controls button {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.item-controls button:hover {
+  background-color: #ddd;
+}
+
+/* värit */
+.item-controls button:nth-child(1),
+.item-controls button:nth-child(2) {
+  background-color: #4caf50;
+  color: white;
+}
+
+.item-controls button:nth-child(3) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* TOTAL */
+.total {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* MAKSU */
+.maksa-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+  background: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* INPUTIT */
+.customer-info input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* SHIPPING */
+.shipping {
+  font-family: "Archivo Black", sans-serif;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+
+/* ADD BUTTON */
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* PAYMENT */
+.payment-pic {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1075px) and (max-width:1249px) {
+
+  body {
+  height: 350vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background: linear-gradient(to right, #c0392b,#8e1a10 );
+  font-size: 14px;
+}
+
+.slide-menu{
+  display: none;
+}
+
+.mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+.ostoskori{
+  left: 780px;
+  position: absolute;
+}
+
+.container {
+  position: absolute;
+  top: 200px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1300px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 00px;
+}
+
+.navbar-holder{
+  left: 12%;
+  display: flex;
+}
+
+.puh{
+  font-size: 20px;
+    margin-left: 200px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+  left: 4%;
+  position: absolute;
+    width: 10%;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+}
+
+
+@media (min-width: 1250px) and (max-width: 1439px){
+  
+   body {
+  height: 350vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background: linear-gradient(to right, #c0392b,#8e1a10 );
+  font-size: 14px;
+}
+
+.slide-menu{
+  display: none;
+}
+
+.mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+.ostoskori{
+  left: 825px;
+  position: absolute;
+}
+
+.container {
+  position: absolute;
+  top: 200px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;      /* täyttää koko käytettävissä olevan tilan */
+  max-width: 1300px;   /* ei veny liian leveäksi isoilla näytöillä */
+  margin: 0 auto;      /* keskittää containerin sivuille */
+  box-sizing: border-box; /* padding ei kasvata leveydestä */
+}
+
+.navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 00px;
+}
+
+.navbar-holder{
+  display: flex;
+}
+
+.puh{
+  font-size: 20px;
+    margin-left: 200px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+    width: 10%;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+  
+}
+
+
+@media (min-width: 1440px) and (max-width: 1819px){
+  
+
+  .slide-menu{
+  display: none;
+}
+
+
+  .mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+.navbar{
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 0px;
+}
+
+.navbar-holder{
+  position: absolute;
+  left: 12%;
+  display: flex;
+}
+
+.puh{
+    font-size: 22px;
+    margin-left: 550px;
+    font-family: "Archivo Black", sans-serif;
+    color: #FF4B3E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo{
+  left: 3%;
+  position: absolute;
+    width: 140px;
+    height: auto;
+}
+
+.navbar a{
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+    padding-left: 40px;
+    text-align: none;
+    text-decoration: none;
+    color:  #FF4B3E;
+     font-family: "Archivo Black", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ostoskori{
+  margin-top: -10px;
+  margin-left: 1150px;
+  position: absolute;
+}
+
+
+
+.navbar a:hover{
+     transform: translateY(-8px); /* nousee ylöspäin */
+}
+
+
+
+}
+
+
+@media(min-width: 1820px) {
+
+   body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 300vh;
+    max-width: 1600px;
+    margin: 0 auto; /* keskittää sisällön */
+  }
+
+  .mobile-navbar{
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      background-color: white;
+      height: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .logo-mobile{
+      width: 180px;
+      height: auto;
+    }
+
+    .mobile-container {
+  position: absolute;
+  top: 100px;
+  max-width: 430px;
+  width: 100%;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  min-height: 2500px; /* TÄRKEÄ */
+}
+
+ 
+
+
+}
+
+
