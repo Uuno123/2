@@ -41,7 +41,7 @@ body {
   position: fixed;
   left: 0;
   bottom: -100%;
-  width: 100%;
+  width: 40%;
   background: white;
   border-radius: 20px 20px 0 0;
   padding: 0 0 60px 0;
@@ -1098,6 +1098,134 @@ html {
   font-size: 14px;
 }
 
+
+.sheet {
+  z-index: 1001;
+  position: fixed;
+  left: 40%;
+  bottom: -100%;
+  width: 40%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 0 0 60px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sheetImage {
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.small-text{
+  font-size: 15px;
+  margin-left: 20px;
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.sheet-name{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.close-btn{
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  border: none;
+  background: #111;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 0;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.add-btn2 {
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 30px;
+  background-color: #FF4B3E;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.add-btn2:hover {
+  background-color: #e03a2f;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 300px;
+}
+
 .navbar-mobile{
     top: 0px;
       position: absolute;
@@ -1721,6 +1849,19 @@ html {
     align-items: flex-start;
     display: flex;
   }
+
+  .sheet {
+  z-index: 1001;
+  position: fixed;
+  left: 0%;
+  bottom: -100%;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 0 0 60px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
 
   .mobile-navbar{
     z-index: 10;
@@ -2852,6 +2993,133 @@ top: 1420px;
   font-size: 14px;
 }
 
+.sheet {
+  z-index: 1001;
+  position: fixed;
+  left: 40%;
+  bottom: -100%;
+  width: 40%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 0 0 60px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sheetImage {
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.small-text{
+  font-size: 15px;
+  margin-left: 20px;
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.sheet-name{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.close-btn{
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  border: none;
+  background: #111;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 0;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.add-btn2 {
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 30px;
+  background-color: #FF4B3E;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.add-btn2:hover {
+  background-color: #e03a2f;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 300px;
+}
+
 .navbar-mobile{
     top: 0px;
       position: absolute;
@@ -3402,17 +3670,8 @@ top: 1420px;
       font-weight: bold;
     }
 
-    .sheet{
-  z-index: 9;
-  position: fixed;
-  left: 35%;
-  bottom: -100%;
-  width: 30%;
-  background: white;
-  border-radius: 20px 20px 0 0;
-  padding: 30px;
-  transition: 0.3s;
-}
+   
+
 
     .puh2{
       padding: 3px;
@@ -3491,6 +3750,133 @@ top: 1420px;
   display: flex;
     background: linear-gradient(to right, #FF4B3E,#fc3325 );
   font-size: 14px;
+}
+
+.sheet {
+  z-index: 1001;
+  position: fixed;
+  left: 40%;
+  bottom: -100%;
+  width: 40%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 0 0 60px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sheetImage {
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.small-text{
+  font-size: 15px;
+  margin-left: 20px;
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.sheet-name{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.close-btn{
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  border: none;
+  background: #111;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 0;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.add-btn2 {
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 30px;
+  background-color: #FF4B3E;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.add-btn2:hover {
+  background-color: #e03a2f;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 300px;
 }
 
 .container {
@@ -4106,17 +4492,7 @@ top: 1420px;
       position: absolute;
     }
 
-    .sheet{
-  z-index: 9;
-  position: fixed;
-  left: 35%;
-  bottom: -100%;
-  width: 30%;
-  background: white;
-  border-radius: 20px 20px 0 0;
-  padding: 30px;
-  transition: 0.3s;
-}
+   
 
   
 
@@ -4128,6 +4504,133 @@ top: 1420px;
   body {
     font-size: 22px;
   }
+
+  .sheet {
+  z-index: 1001;
+  position: fixed;
+  left: 35%;
+  bottom: -100%;
+  width: 40%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 0 0 60px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sheetImage {
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.small-text{
+  font-size: 15px;
+  margin-left: 20px;
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.sheet-name{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.close-btn{
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  border: none;
+  background: #111;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 0;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.add-btn2 {
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 30px;
+  background-color: #FF4B3E;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.add-btn2:hover {
+  background-color: #e03a2f;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.close-btn:hover{
+   transition: all 0.3s ease;
+  transform: translateY(0);
+   background-color: #202020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  appearance: checkbox !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+.sheet.active{
+  bottom: 300px;
+}
 
   .container{
     max-width: 1300px;
@@ -4232,17 +4735,7 @@ top: 1420px;
   cursor: pointer;
 }
 
-.sheet{
-  z-index: 9;
-  position: fixed;
-  left: 35%;
-  bottom: -100%;
-  width: 30%;
-  background: white;
-  border-radius: 20px 20px 0 0;
-  padding: 30px;
-  transition: 0.3s;
-}
+
 
   
 
